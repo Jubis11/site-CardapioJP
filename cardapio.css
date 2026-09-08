@@ -1,0 +1,28 @@
+:root {
+  --azul-escuro: #0e1e38;
+  --laranja-destaque: #e88d35;
+  --fundo-creme: #f9f6f0;
+}
+
+body {
+  background-color: var(--fundo-creme);
+}
+
+.bg-custom-dark {
+  background-color: var(--azul-escuro) !important;
+}
+
+.text-custom-dark {
+  color: var(--azul-escuro);
+}
+
+.btn-custom {
+  background-color: var(--laranja-destaque);
+  color: #fff;
+  border: none;
+}
+
+.btn-custom:hover, .btn-custom.active {
+  background-color: #d17825;
+  color: #fff;
+}
