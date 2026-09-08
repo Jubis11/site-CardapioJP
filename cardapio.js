@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const botoes = document.querySelectorAll('.btn-categoria');
-  const itens = document.querySelectorAll('.item-cardapio');
+  const botoesCategoria = document.querySelectorAll('.btn-categoria');
+  const itensCardapio = document.querySelectorAll('.item-cardapio');
 
-  botoes.forEach(botao => {
+  botoesCategoria.forEach(botao => {
     botao.addEventListener('click', () => {
-      // 1. Remove a classe 'active' de todos os botões e adiciona no clicado
-      botoes.forEach(b => b.classList.remove('active'));
+      // Remove a classe 'active' de todos os botões
+      botoesCategoria.forEach(btn => btn.classList.remove('active'));
+      
+      // Adiciona 'active' no botão clicado
       botao.classList.add('active');
 
-      // 2. Pega o nome da categoria do botão
-      const categoria = botao.getAttribute('data-categoria');
+      const categoriaSelecionada = botao.getAttribute('data-categoria');
 
-      // 3. Filtra os cards exibidos na tela
-      itens.forEach(item => {
-        if (item.classList.contains(categoria)) {
+      // Exibe/oculta os itens da categoria correspondente
+      itensCardapio.forEach(item => {
+        if (item.classList.contains(categoriaSelecionada)) {
           item.classList.remove('d-none');
         } else {
           item.classList.add('d-none');
