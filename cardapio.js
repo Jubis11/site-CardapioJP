@@ -6,21 +6,21 @@ const itensCardapio = [
     nome: 'Batata Frita',
     desc: 'Sequinha e crocante',
     preco: 'R$ 24,90',
-    img: 'https://via.placeholder.com/350x200?text=Batata+Frita'
+    img: 'img/batata-frita.jpg'
   },
   {
     categoria: 'porcoes',
     nome: 'Calabresa Acebolada',
     desc: 'Calabresa grelhada com cebola e acompanhamento',
     preco: 'R$ 38,90',
-    img: 'https://via.placeholder.com/350x200?text=Calabresa+Acebolada'
+    img: 'img/calabresa.webp'
   },
   {
     categoria: 'porcoes',
     nome: 'Frango a Passarinho',
     desc: 'Acompanha alho frito e limão',
     preco: 'R$ 42,90',
-    img: 'https://via.placeholder.com/350x200?text=Frango+a+Passarinho'
+    img: 'img/frango.avif'
   },
 
   // --- SANDUÍCHES ---
@@ -167,6 +167,20 @@ const itensCardapio = [
     desc: 'Lata 350ml gelada',
     preco: 'R$ 6,00',
     img: 'https://via.placeholder.com/350x200?text=Refrigerante'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Suco Natural',
+    desc: 'Confira os sabores disponíveis',
+    preco: 'Consulte o valor',
+    img: 'https://via.placeholder.com/350x200?text=Suco+Natural'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Suco de Polpa',
+    desc: 'Confira os sabores disponíveis',
+    preco: 'Consulte o valor',
+    img: 'https://via.placeholder.com/350x200?text=Suco+de+Polpa'
   }
 ];
 
@@ -212,6 +226,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Exibe a categoria inicial
   renderizarCardapio('porcoes');
 });
