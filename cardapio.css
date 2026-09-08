@@ -1,31 +1,26 @@
-/* Variáveis de Cores */
 :root {
-  --cor-barra: #2b3a67;      /* Azul escuro da navbar e títulos */
-  --cor-destaque: #e8c547;   /* Amarelo dos destaques/botões */
-  --cor-fundo: #F7F5EE;      /* Fundo claro da página */
+  --cor-barra: #2b3a67;
+  --cor-destaque: #e8c547;
+  --cor-fundo: #F7F5EE;
 }
 
-/* Fundo geral da página */
 body {
   background-color: var(--cor-fundo) !important;
   color: #212529;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Navbar e Rodapé */
 .bg-custom-bar {
   background-color: var(--cor-barra) !important;
 }
 
-/* Estilo do título "Juvenal Parada" na Navbar */
 .fonte-alex-brush {
   font-family: 'Alex Brush', cursive;
   font-size: 1.8rem;
-  color: #e8c547;
+  color: #F0C566;
   margin-left: 10px;
 }
 
-/* Botões de Categoria */
 .btn-categoria {
   background-color: #e9ecef;
   color: #495057;
@@ -47,7 +42,6 @@ body {
   color: #000000 !important;
 }
 
-/* Estilo dos Cards */
 .card-item {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
