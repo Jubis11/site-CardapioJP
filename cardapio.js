@@ -64,7 +64,7 @@ const itensCardapio = [
     nome: 'X-Bacon',
     desc: 'Hambúrguer, queijo, bacon e maionese',
     preco: 'R$ 24,80',
-    img: 'https://via.placeholder.com/350x200?text=X-Bacon'
+    img: 'img/x-bacon.jfif'
   },
   {
     categoria: 'sanduiches',
@@ -78,21 +78,21 @@ const itensCardapio = [
     nome: 'X-Egg',
     desc: 'Hambúrguer, queijo, ovo e maionese',
     preco: 'R$ 24,80',
-    img: 'https://via.placeholder.com/350x200?text=X-Egg'
+    img: 'img/x-egg.jpg'
   },
   {
     categoria: 'sanduiches',
     nome: 'X-Salada',
     desc: 'Hambúrguer, queijo, salada e maionese',
     preco: 'R$ 24,80',
-    img: 'https://via.placeholder.com/350x200?text=X-Salada'
+    img: 'img/x-salada.jfif'
   },
   {
     categoria: 'sanduiches',
     nome: 'X-Tudo',
     desc: 'Hambúrguer, queijo, presunto, bacon, ovo, salada e maionese',
     preco: 'R$ 32,40',
-    img: 'https://via.placeholder.com/350x200?text=X-Tudo'
+    img: 'img/x-tudo.jfif'
   },
 
   // --- PRATOS ---
