@@ -1,28 +1,69 @@
+/* Reset Global */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta de Cores do Figma */
 :root {
-  --azul-escuro: #0e1e38;
-  --laranja-destaque: #e88d35;
-  --fundo-creme: #f9f6f0;
+  --cor-fundo: #F7F5EE;
+  --cor-barra: #28355C;
+  --cor-destaque: #F0C566;
 }
 
 body {
-  background-color: var(--fundo-creme);
+  background-color: var(--cor-fundo);
+  color: #333333;
 }
 
-.bg-custom-dark {
-  background-color: var(--azul-escuro) !important;
+/* Ajuste e Limite da Logo para não quebrar o cabeçalho */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
-.text-custom-dark {
-  color: var(--azul-escuro);
+.navbar-brand img {
+  max-height: 50px; /* Mantém a logo proporcional e ajustada */
+  width: auto;
+  object-fit: contain;
 }
 
+/* Barra (Navbar e Footer) */
+.bg-custom-bar {
+  background-color: var(--cor-barra) !important;
+  min-height: 70px;
+}
+
+.text-custom-bar {
+  color: var(--cor-barra);
+}
+
+/* Botão em Destaque e Estado Selecionado */
 .btn-custom {
-  background-color: var(--laranja-destaque);
-  color: #fff;
+  background-color: var(--cor-destaque);
+  color: #1a1a1a;
+  font-weight: 600;
   border: none;
 }
 
-.btn-custom:hover, .btn-custom.active {
-  background-color: #d17825;
-  color: #fff;
+.btn-custom:hover,
+.btn-custom.active {
+  background-color: #e0b355;
+  color: #1a1a1a;
+}
+
+/* Botões Inativos de Filtro */
+.btn-outline-custom {
+  border: 1px solid var(--cor-barra);
+  color: var(--cor-barra);
+  font-weight: 500;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--cor-barra);
+  color: #ffffff;
 }
