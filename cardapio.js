@@ -29,35 +29,35 @@ const itensCardapio = [
     nome: 'Americano',
     desc: 'Presunto, queijo, ovo, salada e maionese',
     preco: 'R$ 25,00',
-    img: 'https://via.placeholder.com/350x200?text=Americano'
+    img: 'img/americano.webp'
   },
   {
     categoria: 'sanduiches',
     nome: 'Bauru',
     desc: 'Presunto, queijo e tomate',
     preco: 'R$ 16,80',
-    img: 'https://via.placeholder.com/350x200?text=Bauru'
+    img: 'img/bauru.jfif'
   },
   {
     categoria: 'sanduiches',
     nome: 'Hambúrguer',
     desc: 'Hambúrguer tradicional',
     preco: 'R$ 16,30',
-    img: 'https://via.placeholder.com/350x200?text=Hamb%C3%Barguer'
+    img: 'img/hamburguer.jfif'
   },
   {
     categoria: 'sanduiches',
     nome: 'Misto',
     desc: 'Presunto e queijo',
     preco: 'R$ 15,20',
-    img: 'https://via.placeholder.com/350x200?text=Misto'
+    img: 'img/misto.webp'
   },
   {
     categoria: 'sanduiches',
     nome: 'Queijo',
     desc: 'Quente ou frio',
     preco: 'R$ 19,50',
-    img: 'https://via.placeholder.com/350x200?text=Queijo'
+    img: 'img/queijo.avif'
   },
   {
     categoria: 'sanduiches',
@@ -71,7 +71,7 @@ const itensCardapio = [
     nome: 'X-Burger',
     desc: 'Hambúrguer e queijo',
     preco: 'R$ 21,50',
-    img: 'https://via.placeholder.com/350x200?text=X-Burger'
+    img: 'img/x-burguer.jfif'
   },
   {
     categoria: 'sanduiches',
