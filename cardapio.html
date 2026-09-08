@@ -8,40 +8,43 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Fonts: Importação das fontes Alex Brush e Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Estilos Personalizados -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Seu CSS Personalizado -->
+  <link rel="stylesheet" href="cardapio.css">
 </head>
-<body style="background-color: #F7F5EE; color: #1A1A1A; font-family: 'Montserrat', sans-serif;">
+<body>
 
   <!-- Navbar / Cabeçalho -->
-  <nav class="navbar navbar-expand-lg py-3" style="background-color: #28355C;">
+  <nav class="navbar navbar-expand-lg bg-custom-bar navbar-dark py-2">
     <div class="container">
       
       <!-- Logo + Nome -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="logo lanchonet.png" alt="Logo Juvenal Parada" class="me-3" style="max-height: 75px; width: auto; object-fit: contain;" onerror="this.style.display='none'">
-        <span style="font-family: 'Alex Brush', cursive; font-size: 3.2rem; color: #F0C566; line-height: 1;">Juvenal Parada</span>
+        <img src="logo lanchonet.png" alt="Logo Juvenal Parada" onerror="this.style.display='none'">
+        <span class="fonte-alex-brush">Juvenal Parada</span>
       </a>
 
-      <!-- Botão Hamburger Mobile -->
-      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- Botão Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Menus de Navegação -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-3 text-uppercase fw-bold align-items-lg-center mt-3 mt-lg-0" style="font-size: 0.8rem; letter-spacing: 0.5px;">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">INÍCIO</a></li>
-          <li class="nav-item"><a class="nav-link active" style="color: #F0C566 !important;" href="cardapio.html">CARDÁPIO</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">SOBRE NÓS</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="bootstrap.html">BOOTSTRAP</a></li>
+        <ul class="navbar-nav gap-3 text-uppercase align-items-lg-center mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cardapio.html">CARDÁPIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE NÓS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap.html">BOOTSTRAP</a>
+          </li>
           <li class="nav-item ms-lg-2">
-            <a class="btn fw-bold px-4 py-2 text-dark text-uppercase" href="#" style="background-color: #F0C566; border-radius: 20px; font-size: 0.75rem; letter-spacing: 1px;">CONTATO</a>
+            <a class="btn fw-bold px-4 py-2 text-dark text-uppercase" href="#" style="background-color: var(--cor-destaque); border-radius: 20px; font-size: 0.8rem; letter-spacing: 0.5px;">CONTATO</a>
           </li>
         </ul>
       </div>
@@ -52,53 +55,53 @@
   <!-- Conteúdo Principal -->
   <main class="container my-5">
     <div class="text-center mb-4">
-      <h1 class="fw-bold" style="color: #28355C;">Nosso Cardápio</h1>
+      <h1 class="fw-bold" style="color: var(--cor-barra); font-size: 2rem;">Nosso Cardápio</h1>
       <p class="text-muted small">Uma seleção de pratos e porções para todos os gostos</p>
     </div>
 
     <!-- Botões de Categoria -->
     <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-      <button class="btn fw-bold px-4 py-2 text-uppercase" style="background-color: #F0C566; color: #000; border: none; border-radius: 6px; font-size: 0.8rem;">PORÇÕES</button>
-      <button class="btn btn-outline-secondary fw-bold px-4 py-2 text-uppercase" style="border-radius: 6px; font-size: 0.8rem;">SANDUÍCHES</button>
-      <button class="btn btn-outline-secondary fw-bold px-4 py-2 text-uppercase" style="border-radius: 6px; font-size: 0.8rem;">PRATOS</button>
-      <button class="btn btn-outline-secondary fw-bold px-4 py-2 text-uppercase" style="border-radius: 6px; font-size: 0.8rem;">SOBREMESAS</button>
-      <button class="btn btn-outline-secondary fw-bold px-4 py-2 text-uppercase" style="border-radius: 6px; font-size: 0.8rem;">BEBIDAS</button>
+      <button class="btn btn-categoria active text-uppercase">PORÇÕES</button>
+      <button class="btn btn-categoria text-uppercase">SANDUÍCHES</button>
+      <button class="btn btn-categoria text-uppercase">PRATOS</button>
+      <button class="btn btn-categoria text-uppercase">SOBREMESAS</button>
+      <button class="btn btn-categoria text-uppercase">BEBIDAS</button>
     </div>
 
     <!-- Grade de Cards -->
     <div class="row g-4">
       <!-- Item 1 -->
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 8px; background-color: #ffffff;">
-          <img src="img/porcao-batata.jpg" class="rounded mb-3" alt="Batata Frita" style="height: 200px; object-fit: cover; width: 100%;" onerror="this.src='https://via.placeholder.com/350x200?text=Batata+Frita'">
+        <div class="card card-item border-0 p-3 h-100">
+          <img src="https://via.placeholder.com/350x200?text=Batata+Frita" class="rounded mb-3" alt="Batata Frita">
           <div>
             <h5 class="fw-bold mb-1 fs-6">Batata Frita</h5>
             <p class="text-muted small mb-2">Sequinha e crocante</p>
-            <p class="fw-bold mb-0 fs-6" style="color: #28355C;">R$ 24,90</p>
+            <p class="fw-bold mb-0 fs-6" style="color: var(--cor-barra);">R$ 24,90</p>
           </div>
         </div>
       </div>
 
       <!-- Item 2 -->
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 8px; background-color: #ffffff;">
-          <img src="img/porcao-calabresa.jpg" class="rounded mb-3" alt="Calabresa Acebolada" style="height: 200px; object-fit: cover; width: 100%;" onerror="this.src='https://via.placeholder.com/350x200?text=Calabresa+Acebolada'">
+        <div class="card card-item border-0 p-3 h-100">
+          <img src="https://via.placeholder.com/350x200?text=Calabresa+Acebolada" class="rounded mb-3" alt="Calabresa Acebolada">
           <div>
             <h5 class="fw-bold mb-1 fs-6">Calabresa Acebolada</h5>
             <p class="text-muted small mb-2">Calabresa grelhada com cebola e acompanhamento</p>
-            <p class="fw-bold mb-0 fs-6" style="color: #28355C;">R$ 38,90</p>
+            <p class="fw-bold mb-0 fs-6" style="color: var(--cor-barra);">R$ 38,90</p>
           </div>
         </div>
       </div>
 
       <!-- Item 3 -->
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 8px; background-color: #ffffff;">
-          <img src="img/porcao-picanha.jpg" class="rounded mb-3" alt="Picanha na Chapa" style="height: 200px; object-fit: cover; width: 100%;" onerror="this.src='https://via.placeholder.com/350x200?text=Picanha+na+Chapa'">
+        <div class="card card-item border-0 p-3 h-100">
+          <img src="https://via.placeholder.com/350x200?text=Picanha+na+Chapa" class="rounded mb-3" alt="Picanha na Chapa">
           <div>
             <h5 class="fw-bold mb-1 fs-6">Picanha na Chapa</h5>
             <p class="text-muted small mb-2">Picanha fatiada na chapa com alho</p>
-            <p class="fw-bold mb-0 fs-6" style="color: #28355C;">R$ 78,90</p>
+            <p class="fw-bold mb-0 fs-6" style="color: var(--cor-barra);">R$ 78,90</p>
           </div>
         </div>
       </div>
@@ -106,7 +109,7 @@
   </main>
 
   <!-- Rodapé -->
-  <footer class="text-white py-4 mt-5" style="background-color: #28355C;">
+  <footer class="bg-custom-bar text-white py-4 mt-5">
     <div class="container text-center">
       <p class="mb-0 small">Juvenal Parada &copy; 2026 - Todos os direitos reservados.</p>
     </div>
