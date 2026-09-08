@@ -1,3 +1,6 @@
+/* Importação da Fonte Alex Brush do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 /* Reset Global */
 *,
 *::before,
@@ -12,58 +15,76 @@
   --cor-fundo: #F7F5EE;
   --cor-barra: #28355C;
   --cor-destaque: #F0C566;
+  --cor-texto: #1A1A1A;
 }
 
 body {
-  background-color: var(--cor-fundo);
-  color: #333333;
-}
-
-/* Ajuste e Limite da Logo para não quebrar o cabeçalho */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-.navbar-brand img {
-  max-height: 50px; /* Mantém a logo proporcional e ajustada */
-  width: auto;
-  object-fit: contain;
+  background-color: var(--cor-fundo) !important;
+  color: var(--cor-texto);
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 /* Barra (Navbar e Footer) */
 .bg-custom-bar {
   background-color: var(--cor-barra) !important;
-  min-height: 70px;
 }
 
-.text-custom-bar {
-  color: var(--cor-barra);
+.fonte-alex-brush {
+  font-family: 'Alex Brush', cursive !important;
+  font-size: 2.8rem !important;
+  color: var(--cor-destaque) !important;
+  line-height: 1;
 }
 
-/* Botão em Destaque e Estado Selecionado */
-.btn-custom {
-  background-color: var(--cor-destaque);
-  color: #1a1a1a;
-  font-weight: 600;
-  border: none;
+/* Ajuste da Imagem da Logo para Destaque */
+.navbar-brand img {
+  max-height: 95px !important;
+  width: auto;
+  object-fit: contain;
+  margin-right: 12px;
 }
 
-.btn-custom:hover,
-.btn-custom.active {
-  background-color: #e0b355;
-  color: #1a1a1a;
+/* Links de Navegação */
+.nav-link {
+  color: #ffffff !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-/* Botões Inativos de Filtro */
-.btn-outline-custom {
-  border: 1px solid var(--cor-barra);
-  color: var(--cor-barra);
-  font-weight: 500;
+.nav-link.active,
+.nav-link:hover {
+  color: var(--cor-destaque) !important;
 }
 
-.btn-outline-custom:hover {
-  background-color: var(--cor-barra);
-  color: #ffffff;
+/* Botões de Categoria do Cardápio */
+.btn-categoria {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  color: var(--cor-texto);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 22px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.btn-categoria.active {
+  background-color: var(--cor-destaque) !important;
+  border-color: var(--cor-destaque) !important;
+  color: #000000 !important;
+}
+
+/* Cards do Cardápio */
+.card-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-item img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
