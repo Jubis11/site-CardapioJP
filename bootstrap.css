@@ -1,0 +1,39 @@
+/* Variáveis globais do site */
+:root {
+  --cor-barra: #8B0000; /* Cor escura do cabeçalho e rodapé (ex: vinho/vermelho escuro) */
+  --cor-fundo: #F8F9FA;
+}
+
+/* Estilo da barra customizada */
+.bg-custom-bar {
+  background-color: var(--cor-barra) !important;
+}
+
+/* Fonte especial para o nome do estabelecimento */
+.fonte-alex-brush {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* Links da Navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Ajuste da logo no cabeçalho */
+.navbar-brand img {
+  max-height: 45px;
+  width: auto;
+  object-fit: contain;
+}

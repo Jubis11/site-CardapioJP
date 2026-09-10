@@ -1,270 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conhecendo o Bootstrap - Juvenal Parada</title>
-  
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Fonte Alex Brush do Google Fonts -->
+
+  <!-- Google Fonts: Fonte Alex Brush -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --cor-barra: #28355c;
-      --cor-destaque: #e8c547;
-      --cor-fundo: #F7F5EE;
-    }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    body {
-      background-color: var(--cor-fundo) !important;
-      color: #212529;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    /* Navbar com a cor exata #28355c */
-    .bg-custom-bar {
-      background-color: var(--cor-barra) !important;
-      padding: 1rem 0;
-    }
-
-    .fonte-alex-brush {
-      font-family: 'Alex Brush', cursive;
-      font-size: 2.2rem;
-      color: #F0C566;
-      margin-left: 10px;
-      text-decoration: none;
-      line-height: 1;
-    }
-
-    /* Links da Navbar em estilo Regular (font-weight: 400) */
-    .nav-link-custom {
-      color: #FFFFFF !important;
-      font-weight: 400;
-      font-size: 0.85rem;
-      letter-spacing: 0.8px;
-      margin-left: 2rem;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-
-    .nav-link-custom:hover {
-      color: var(--cor-destaque) !important;
-    }
-
-    /* Seção Conteúdo */
-    .main-content {
-      padding-top: 3.5rem;
-      padding-bottom: 4rem;
-      width: 100%;
-      flex: 1;
-    }
-
-    .main-title {
-      font-size: 2.8rem;
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 0.25rem;
-    }
-
-    .main-subtitle {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 3.5rem;
-    }
-
-    /* Textos Centrais */
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      color: #000;
-      margin-bottom: 0.75rem;
-    }
-
-    .section-text {
-      font-size: 1.15rem;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Ícone Bootstrap */
-    .bs-logo-box {
-      background-color: #FFFFFF;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 200px;
-    }
-
-    /* Cards Inferiores Ampliados */
-    .card-item {
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      background-color: #ffffff !important;
-      padding: 2rem 1.5rem; /* Aumentado padding interno */
-      min-height: 160px;    /* Define altura mínima maior */
-      height: 100%;
-      border: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .card-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .feature-title {
-      font-size: 0.9rem; /* Leve aumento no título do card */
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #000;
-      margin-bottom: 0.85rem;
-    }
-
-    .feature-text {
-      font-size: 0.85rem; /* Leve aumento na fonte do corpo do card */
-      color: #444;
-      line-height: 1.5;
-      margin-bottom: 0;
-    }
-
-    /* Rodapé */
-    .footer-custom {
-      background-color: var(--cor-barra);
-      color: #FFFFFF;
-      padding: 1.5rem 0;
-      margin-top: auto;
-      font-size: 0.9rem;
-    }
-  </style>
+  <!-- Seu CSS Personalizado -->
+  <link rel="stylesheet" href="cardapio.css">
+  <link rel="stylesheet" href="inicio.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <!-- Menu / Header -->
-  <header class="bg-custom-bar">
-    <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
-      <a href="#" class="fonte-alex-brush">Juvenal Parada</a>
-      <nav class="d-flex align-items-center">
-        <a href="#" class="nav-link-custom">INÍCIO</a>
-        <a href="#" class="nav-link-custom">CARDÁPIO</a>
-        <a href="#" class="nav-link-custom">BOOTSTRAP</a>
-      </nav>
+  <!-- Navbar / Cabeçalho (Idêntica ao cardapio.html) -->
+  <nav class="navbar navbar-expand-lg bg-custom-bar navbar-dark py-2">
+    <div class="container">
+      
+      <!-- Logo + Nome -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo lanchonet.png" alt="Logo Juvenal Parada" onerror="this.style.display='none'">
+        <span class="fonte-alex-brush">Juvenal Parada</span>
+      </a>
+
+      <!-- Botão Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menus de Navegação -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3 text-uppercase align-items-lg-center mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cardapio.html">CARDÁPIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="bootstrap.html">BOOTSTRAP</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </header>
+  </nav>
 
   <!-- Conteúdo Principal -->
-  <main class="main-content">
-    <div class="container-fluid px-5">
-      
-      <!-- Título Principal -->
-      <div class="text-center">
-        <h1 class="main-title">Conhecendo o Bootstrap</h1>
-        <p class="main-subtitle">A tecnologia que torna esse site possível</p>
-      </div>
-
-      <!-- Seção do Meio -->
-      <div class="row align-items-center my-5 px-md-4">
-        <div class="col-md-7 pe-md-5">
-          <div class="mb-4">
-            <h2 class="section-title">O QUE É BOOTSTRAP?</h2>
-            <p class="section-text">
-              Bootstrap é um framework front-end gratuito e de código aberto que facilita a criação de sites responsivos e profissionais.
-            </p>
-          </div>
-
-          <div>
-            <h2 class="section-title">PARA QUE SERVE?</h2>
-            <p class="section-text">
-              Ele fornece componentes prontos, sistema de grid, tipografia padronizada e recursos que aceleram o desenvolvimento web de forma organizada.
-            </p>
-          </div>
-        </div>
-
-        <!-- Ícone Bootstrap -->
-        <div class="col-md-5 text-center mt-4 mt-md-0">
-          <div class="bs-logo-box">
-            <svg width="110" height="110" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="128" height="128" rx="28" fill="url(#bs-grad)"/>
-              <path d="M43.5 35H68.2C74.8 35 79.5 36.8 82.3 40.4C85.1 44 85.1 48.8 82.3 52.4C80.2 55.1 77 56.6 72.8 57C78.2 57.6 82.1 59.3 84.5 62.1C86.9 64.9 88.1 68.8 88.1 73.8C88.1 79.8 85.8 84.4 81.2 87.6C76.6 90.8 69.8 92.4 60.8 92.4H43.5V35ZM56.3 45.4V58.3H66.6C70.1 58.3 72.7 57.7 74.4 56.5C76.1 55.3 77 53.3 77 50.5C77 47.7 76.1 45.7 74.4 44.5C72.7 43.3 70.1 42.7 66.6 42.7H56.3V45.4ZM56.3 67.8V82H67.8C71.6 82 74.4 81.3 76.2 79.9C78 78.5 78.9 76.2 78.9 73C78.9 69.8 78 67.5 76.2 66.1C74.4 64.7 71.6 64 67.8 64H56.3V67.8Z" fill="white"/>
-              <defs>
-                <linearGradient id="bs-grad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#7952B3"/>
-                  <stop offset="1" stop-color="#4D2A82"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cards Inferiores Ampliados -->
-      <div class="row g-3 mt-4 px-md-4">
-        <div class="col-12 col-md">
-          <div class="card-item">
-            <h3 class="feature-title">SISTEMA DE GRID</h3>
-            <p class="feature-text">Organização em 12 colunas que facilita a criação de layouts responsivos.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md">
-          <div class="card-item">
-            <h3 class="feature-title">RESPONSIVIDADE</h3>
-            <p class="feature-text">Adaptação automática para celulares, tablets, notebooks e desktops.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md">
-          <div class="card-item">
-            <h3 class="feature-title">COMPONENTES</h3>
-            <p class="feature-text">Diversos componentes prontos como cards, navbars, botões e muito mais.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md">
-          <div class="card-item">
-            <h3 class="feature-title">FACILIDADE</h3>
-            <p class="feature-text">Menos código, mais produtividade e projetos consecutivamente.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md">
-          <div class="card-item">
-            <h3 class="feature-title">COMUNIDADE</h3>
-            <p class="feature-text">Grande comunidade e documentação completa e confiável.</p>
-          </div>
-        </div>
-      </div>
-
+  <main class="container my-5">
+    
+    <!-- Título Principal -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" style="color: var(--cor-barra); font-size: 2.5rem;">Conhecendo o Bootstrap</h1>
+      <p class="text-muted small">A tecnologia que torna esse site possível</p>
     </div>
+
+    <!-- Seção Informativa (Texto + Logo) -->
+    <div class="row align-items-center my-5">
+      <div class="col-md-7 pe-md-5">
+        <div class="mb-4">
+          <h2 class="fw-bold text-uppercase fs-5 mb-2" style="color: var(--cor-barra);">O QUE É BOOTSTRAP?</h2>
+          <p class="text-secondary leading-relaxed">
+            Bootstrap é um framework front-end gratuito e de código aberto que facilita a criação de sites responsivos e profissionais.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="fw-bold text-uppercase fs-5 mb-2" style="color: var(--cor-barra);">PARA QUE SERVE?</h2>
+          <p class="text-secondary leading-relaxed">
+            Ele fornece componentes prontos, sistema de grid, tipografia padronizada e recursos que aceleram o desenvolvimento web de forma organizada.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ícone Bootstrap -->
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <div class="bg-white p-4 rounded-4 shadow-sm d-inline-flex align-items-center justify-content-center" style="width: 200px; height: 200px;">
+          <svg width="110" height="110" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="128" height="128" rx="28" fill="url(#bs-grad)"/>
+            <path d="M43.5 35H68.2C74.8 35 79.5 36.8 82.3 40.4C85.1 44 85.1 48.8 82.3 52.4C80.2 55.1 77 56.6 72.8 57C78.2 57.6 82.1 59.3 84.5 62.1C86.9 64.9 88.1 68.8 88.1 73.8C88.1 79.8 85.8 84.4 81.2 87.6C76.6 90.8 69.8 92.4 60.8 92.4H43.5V35ZM56.3 45.4V58.3H66.6C70.1 58.3 72.7 57.7 74.4 56.5C76.1 55.3 77 53.3 77 50.5C77 47.7 76.1 45.7 74.4 44.5C72.7 43.3 70.1 42.7 66.6 42.7H56.3V45.4ZM56.3 67.8V82H67.8C71.6 82 74.4 81.3 76.2 79.9C78 78.5 78.9 76.2 78.9 73C78.9 69.8 78 67.5 76.2 66.1C74.4 64.7 71.6 64 67.8 64H56.3V67.8Z" fill="white"/>
+            <defs>
+              <linearGradient id="bs-grad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7952B3"/>
+                <stop offset="1" stop-color="#4D2A82"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards de Recursos -->
+    <div class="row g-3 mt-4">
+      <div class="col-12 col-md">
+        <div class="card border-0 shadow-sm p-4 h-100 rounded-3 bg-white">
+          <h3 class="fw-bold fs-6 text-uppercase mb-2" style="color: var(--cor-barra);">SISTEMA DE GRID</h3>
+          <p class="text-secondary small mb-0">Organização em 12 colunas que facilita a criação de layouts responsivos.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md">
+        <div class="card border-0 shadow-sm p-4 h-100 rounded-3 bg-white">
+          <h3 class="fw-bold fs-6 text-uppercase mb-2" style="color: var(--cor-barra);">RESPONSIVIDADE</h3>
+          <p class="text-secondary small mb-0">Adaptação automática para celulares, tablets, notebooks e desktops.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md">
+        <div class="card border-0 shadow-sm p-4 h-100 rounded-3 bg-white">
+          <h3 class="fw-bold fs-6 text-uppercase mb-2" style="color: var(--cor-barra);">COMPONENTES</h3>
+          <p class="text-secondary small mb-0">Diversos componentes prontos como cards, navbars, botões e muito mais.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md">
+        <div class="card border-0 shadow-sm p-4 h-100 rounded-3 bg-white">
+          <h3 class="fw-bold fs-6 text-uppercase mb-2" style="color: var(--cor-barra);">FACILIDADE</h3>
+          <p class="text-secondary small mb-0">Menos código, mais produtividade e projetos organizados.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md">
+        <div class="card border-0 shadow-sm p-4 h-100 rounded-3 bg-white">
+          <h3 class="fw-bold fs-6 text-uppercase mb-2" style="color: var(--cor-barra);">COMUNIDADE</h3>
+          <p class="text-secondary small mb-0">Grande comunidade e documentação completa e confiável.</p>
+        </div>
+      </div>
+    </div>
+
   </main>
 
-  <!-- Rodapé -->
-  <footer class="footer-custom text-center">
-    <div class="container-fluid px-5">
-      <p class="mb-0">
-        &copy; 2026 <span class="fonte-alex-brush" style="font-size: 1.4rem;">Juvenal Parada</span>. Todos os direitos reservados.
-      </p>
+  <!-- Rodapé (Idêntico ao cardapio.html) -->
+  <footer class="bg-custom-bar text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0 small">Juvenal Parada &copy; 2026 - Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
