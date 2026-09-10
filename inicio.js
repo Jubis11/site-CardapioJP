@@ -1,4 +1,4 @@
-// Lista de pratos em destaque
+// Dados dos pratos em destaque
 const destaquesData = [
   {
     nome: "Porção de Frango",
@@ -20,7 +20,7 @@ const destaquesData = [
   }
 ];
 
-// Função para renderizar os destaques na tela
+// Função para injetar os pratos no HTML
 function renderizarDestaques() {
   const container = document.getElementById("destaques-grid");
   if (!container) return;
@@ -34,8 +34,10 @@ function renderizarDestaques() {
     col.innerHTML = `
       <div class="card-item-prato">
         <img src="${item.imagem}" alt="${item.nome}">
-        <h3 class="prato-title">${item.nome}</h3>
-        <p class="prato-desc">${item.descricao}</p>
+        <div>
+          <h3 class="prato-title">${item.nome}</h3>
+          <p class="prato-desc">${item.descricao}</p>
+        </div>
         <p class="prato-preco">${item.preco}</p>
       </div>
     `;
@@ -44,5 +46,5 @@ function renderizarDestaques() {
   });
 }
 
-// Executa assim que a página carregar
+// Carrega os elementos após o carregamento da página
 document.addEventListener("DOMContentLoaded", renderizarDestaques);
