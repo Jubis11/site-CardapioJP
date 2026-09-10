@@ -16,7 +16,7 @@
 
   <style>
     :root {
-      --cor-barra: #28355c;
+      --cor-barra: #28355C;
       --cor-destaque: #F0C566;
       --cor-fundo: #F7F5EE;
       --cor-laranja-btn: #F0C566;
@@ -31,10 +31,10 @@
       padding: 0;
     }
 
-    /* Navbar */
+    /* Navbar com tom exato e maior altura */
     .bg-custom-bar {
       background-color: var(--cor-barra) !important;
-      padding: 1rem 0;
+      padding: 1.4rem 0;
     }
 
     .fonte-alex-brush {
@@ -63,6 +63,21 @@
     .hero-section {
       padding: 4rem 0 3rem 0;
       position: relative;
+    }
+
+    .hero-panela-img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-texto-juvenal {
+      font-family: 'Alex Brush', cursive;
+      font-size: 3.8rem;
+      color: var(--cor-barra);
+      line-height: 1;
     }
 
     .tagline-laranja {
@@ -180,7 +195,7 @@
       margin: 4rem 0;
     }
 
-    /* Rodapé Responsivo */
+    /* Rodapé */
     footer {
       background-color: var(--cor-barra);
       color: #fff;
@@ -244,13 +259,13 @@
   <!-- Navbar -->
   <header class="bg-custom-bar">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="#" class="d-flex align-items-center text-decoration-none">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
         <span class="fonte-alex-brush">Juvenal Parada</span>
       </a>
       <nav class="d-flex align-items-center">
-        <a href="#" class="nav-link-custom">INÍCIO</a>
-        <a href="#" class="nav-link-custom">CARDÁPIO</a>
-        <a href="#" class="nav-link-custom">BOOTSTRAP</a>
+        <a href="index.html" class="nav-link-custom">INÍCIO</a>
+        <a href="cardapio.html" class="nav-link-custom">CARDÁPIO</a>
+        <a href="bootstrap.html" class="nav-link-custom">BOOTSTRAP</a>
       </nav>
     </div>
   </header>
@@ -267,20 +282,18 @@
               Comida boa, porções generosas e aquele clima de boteco que faz você querer ficar mais um pouco.
             </p>
             <div>
-              <a href="#" class="btn btn-laranja">CONHEÇA NOSSO CARDÁPIO</a>
+              <a href="cardapio.html" class="btn btn-laranja">CONHEÇA NOSSO CARDÁPIO</a>
             </div>
           </div>
-          <div class="col-md-6 text-center position-relative mt-4 mt-md-0">
-            <!-- Ilustração central -->
-            <div class="p-4 rounded-circle d-inline-block" style="border: 1px dashed #F0C566;">
-              <span class="fonte-alex-brush" style="font-size: 3.5rem; color: var(--cor-barra);">Juvenal Parada</span>
-            </div>
+          <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center mt-4 mt-md-0 pt-md-4">
+            <img src="panela.png" alt="Panela" class="hero-panela-img">
+            <span class="hero-texto-juvenal">Juvenal Parada</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bons Encontros com Borda de 0.5px -->
+    <!-- Bons Encontros -->
     <section class="section-bons-encontros">
       <div class="container text-center">
         <span class="tagline-laranja">• UM LUGAR PARA •</span>
@@ -320,7 +333,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Card 1 -->
           <div class="col-md-4">
             <div class="card-item-prato">
               <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop" alt="Porção de Frango">
@@ -330,7 +342,6 @@
             </div>
           </div>
 
-          <!-- Card 2 -->
           <div class="col-md-4">
             <div class="card-item-prato">
               <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop" alt="X-Burguer Artesanal">
@@ -340,7 +351,6 @@
             </div>
           </div>
 
-          <!-- Card 3 -->
           <div class="col-md-4">
             <div class="card-item-prato">
               <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop" alt="Pastel na Chapa">
@@ -368,12 +378,10 @@
     <div class="container">
       <div class="row align-items-start justify-content-between text-center text-md-start">
         
-        <!-- Logo -->
         <div class="col-12 col-md-auto footer-col">
-          <span class="fonte-alex-brush" style="font-size: 2.2rem; display: block; line-height: 1;">Juvenal Parada</span>
+          <a href="index.html" class="fonte-alex-brush" style="font-size: 2.2rem; display: block; line-height: 1;">Juvenal Parada</a>
         </div>
 
-        <!-- Horários -->
         <div class="col-12 col-sm-6 col-md-auto footer-col">
           <h5>HORÁRIOS</h5>
           <p class="mb-1">seg a sex - 7h as 21h</p>
@@ -381,17 +389,15 @@
           <p class="mb-0">dom - fechado</p>
         </div>
 
-        <!-- Navegação -->
         <div class="col-12 col-sm-6 col-md-auto footer-col">
           <h5>NAVEGAÇÃO</h5>
           <ul>
-            <li class="mb-1"><a href="#">Início</a></li>
-            <li class="mb-1"><a href="#">Cardápio</a></li>
-            <li class="mb-0"><a href="#">Bootstrap</a></li>
+            <li class="mb-1"><a href="index.html">Início</a></li>
+            <li class="mb-1"><a href="cardapio.html">Cardápio</a></li>
+            <li class="mb-0"><a href="bootstrap.html">Bootstrap</a></li>
           </ul>
         </div>
 
-        <!-- Contato -->
         <div class="col-12 col-md-auto footer-col">
           <h5>CONTATO</h5>
           <p class="mb-1">Rua da Móoca 2895</p>
