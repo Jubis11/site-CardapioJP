@@ -27,7 +27,7 @@ const itensCardapio = [
     nome: 'Empanadinho Família JP',
     desc: 'Empanado de frango especial servido com geleia de abacaxi apimentada',
     preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Empanadinho+JP'
+    img: 'img/JuvenalParada.jpg'
   },
   // --- SANDUÍCHES ---
   {
@@ -107,63 +107,63 @@ const itensCardapio = [
     nome: 'Contra Filé',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 32,00',
-    img: 'https://via.placeholder.com/350x200?text=Contra+File'
+    img: 'img/marmitex-de-contra-file.jpg'
   },
   {
     categoria: 'pratos',
     nome: 'Filé de Frango',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 28,00',
-    img: 'https://via.placeholder.com/350x200?text=File+de+Frango'
+    img: 'img/filé-de-frango.jpg'
   },
   {
     categoria: 'pratos',
     nome: 'Parmegiana',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 34,00',
-    img: 'https://via.placeholder.com/350x200?text=Parmegiana'
+    img: 'img/file-parmegiana.webp'
   },
   {
     categoria: 'pratos',
     nome: 'Milanesas',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 30,00',
-    img: 'https://via.placeholder.com/350x200?text=Milanesa'
+    img: 'img/milanesa.jpg'
   },
   {
     categoria: 'pratos',
     nome: 'Picadinho',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 28,00',
-    img: 'https://via.placeholder.com/350x200?text=Picadinho'
+    img: 'img/picadinho.jfif'
   },
   {
     categoria: 'pratos',
     nome: 'Calabresa Defumada',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 26,00',
-    img: 'https://via.placeholder.com/350x200?text=Calabresa+Defumada'
+    img: 'img/calabresa-defumada.jfif'
   },
   {
     categoria: 'pratos',
     nome: 'Bisteca',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 26,00',
-    img: 'https://via.placeholder.com/350x200?text=Bisteca'
+    img: 'img/bisteca.jpg2207224435'
   },
   {
     categoria: 'pratos',
     nome: 'Omelete',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 25,00',
-    img: 'https://via.placeholder.com/350x200?text=Omelete'
+    img: 'img/omelete.jfif'
   },
   {
     categoria: 'pratos',
     nome: 'Almôndegas',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas (*Confira disponibilidade)',
     preco: 'R$ 28,00',
-    img: 'https://via.placeholder.com/350x200?text=Almondegas'
+    img: 'img/almondegas.jfif'
   },
   // --- BEBIDAS ---
   {
@@ -171,49 +171,49 @@ const itensCardapio = [
     nome: 'Refrigerante Lata',
     desc: 'Lata 350ml (todos os sabores)',
     preco: 'R$ 8,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+Lata'
+    img: 'img/refri-lata.jpeg'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 600ml (Coca-Cola)',
     desc: 'Garrafa 600ml',
     preco: 'R$ 11,00',
-    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+600ml'
+    img: 'img/refri-600ml.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 600ml (Outros sabores)',
     desc: 'Garrafa 600ml',
     preco: 'R$ 10,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+600ml'
+    img: 'img/refri-garrafa-600ml.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 2 Litros (Coca-Cola)',
     desc: 'Garrafa 2L',
     preco: 'R$ 19,50',
-    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+2L'
+    img: 'img/2l-coca.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 2 Litros (Outros sabores)',
     desc: 'Garrafa 2L',
     preco: 'R$ 15,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+2L'
+    img: 'img/2l-refri.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Suco de Laranja',
     desc: 'Suco natural',
     preco: 'R$ 13,00',
-    img: 'https://via.placeholder.com/350x200?text=Suco+de+Laranja'
+    img: 'img/suco-laranja.jpg'
   },
   {
     categoria: 'bebidas',
     nome: 'Sucos (Outros sabores)',
     desc: 'Sucos diversos',
     preco: 'R$ 11,00',
-    img: 'https://via.placeholder.com/350x200?text=Sucos+Diversos'
+    img: 'img/suco.jpg'
   }
 ];
 
