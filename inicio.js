@@ -1,23 +1,23 @@
 // Dados dos pratos em destaque
 const destaquesData = [
   {
-    nome: "Porção de Frango",
-    descricao: "Iscas de frango empanadas com molho da casa.",
-    preco: "R$ 48,90",
-    imagem: "https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop"
+    nome: 'Batata Frita',
+    descricao: 'Sequinha e crocante',
+    preco: 'consulte o valor',
+    imagem: 'img/batata-frita.jpg'
   },
   {
-    nome: "X-Burguer Artesanal",
-    descricao: "Pão brioche, 180g de carne, queijo, bacon e molho especial.",
-    preco: "R$ 34,90",
-    imagem: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop"
+     nome: 'Americano',
+    descricao: 'Presunto, queijo, ovo, salada e maionese',
+    preco: 'R$ 25,00',
+    imagem: 'img/americano.webp'
   },
   {
-    nome: "Pastel na Chapa",
-    descricao: "Pastel crocante feito na chapa com recheio especial.",
-    preco: "R$ 29,90",
-    imagem: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop"
-  }
+    nome: 'Contra Filé',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 32,00',
+    imagem: 'img/marmitex-de-contra-file.jpg'
+  },
 ];
 
 // Função para injetar os pratos no HTML
