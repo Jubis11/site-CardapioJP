@@ -1,0 +1,46 @@
+:root {
+  --cor-barra: #2b3a67;
+  --cor-destaque: #e8c547;
+  --cor-fundo: #F7F5EE;
+}
+
+body {
+  background-color: var(--cor-fundo) !important;
+  color: #212529;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header & Navbar Padronizados */
+.bg-custom-bar {
+  background-color: var(--cor-barra) !important;
+}
+
+.fonte-alex-brush {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.2rem;
+  color: #F0C566;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.nav-link-custom {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #F0C566 !important;
+}
+
+/* Ajuste das imagens na navbar (se houver) */
+.navbar-brand img {
+  max-height: 45px;
+  width: auto;
+  object-fit: contain;
+}
