@@ -128,7 +128,7 @@ const itensCardapio = [
     nome: 'Milanesas',
     desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 30,00',
-    img: 'img/milanesa.jpg'
+    img: 'img/Milanesa.jpg'
   },
   {
     categoria: 'pratos',
