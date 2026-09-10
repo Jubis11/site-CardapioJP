@@ -14,7 +14,7 @@ const destaquesData = [
   },
   {
     nome: 'Contra Filé',
-    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    descricao: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
     preco: 'R$ 32,00',
     imagem: 'img/marmitex-de-contra-file.jpg'
   },
