@@ -171,49 +171,49 @@ const itensCardapio = [
     nome: 'Refrigerante Lata',
     desc: 'Lata 350ml (todos os sabores)',
     preco: 'R$ 8,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+Lata'
+    img: 'img/refri-lata.jpeg'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 600ml (Coca-Cola)',
     desc: 'Garrafa 600ml',
     preco: 'R$ 11,00',
-    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+600ml'
+    img: 'img/refri-600ml.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 600ml (Outros sabores)',
     desc: 'Garrafa 600ml',
     preco: 'R$ 10,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+600ml'
+    img: 'img/refri-garrafa-600ml.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 2 Litros (Coca-Cola)',
     desc: 'Garrafa 2L',
     preco: 'R$ 19,50',
-    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+2L'
+    img: 'img/2l-coca.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Refrigerante 2 Litros (Outros sabores)',
     desc: 'Garrafa 2L',
     preco: 'R$ 15,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante+2L'
+    img: 'img/2l-refri.webp'
   },
   {
     categoria: 'bebidas',
     nome: 'Suco de Laranja',
     desc: 'Suco natural',
     preco: 'R$ 13,00',
-    img: 'https://via.placeholder.com/350x200?text=Suco+de+Laranja'
+    img: 'img/suco-laranja.jpg'
   },
   {
     categoria: 'bebidas',
     nome: 'Sucos (Outros sabores)',
     desc: 'Sucos diversos',
     preco: 'R$ 11,00',
-    img: 'https://via.placeholder.com/350x200?text=Sucos+Diversos'
+    img: 'img/suco.jpg'
   }
 ];
 

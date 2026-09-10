@@ -17,10 +17,10 @@
   <style>
     :root {
       --cor-barra: #28355c;
-      --cor-destaque: #e8c547;
+      --cor-destaque: #F0C566;
       --cor-fundo: #F7F5EE;
-      --cor-laranja-btn: #e58d57;
-      --cor-texto-suave: #d37338;
+      --cor-laranja-btn: #F0C566;
+      --cor-texto-suave: #F0C566;
     }
 
     body {
@@ -31,7 +31,7 @@
       padding: 0;
     }
 
-    /* Navbar com cor #28355c e links regulares */
+    /* Navbar */
     .bg-custom-bar {
       background-color: var(--cor-barra) !important;
       padding: 1rem 0;
@@ -43,13 +43,6 @@
       color: #F0C566;
       text-decoration: none;
       line-height: 1;
-    }
-
-    .sub-logo {
-      font-size: 0.65rem;
-      color: #fff;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
     }
 
     .nav-link-custom {
@@ -73,7 +66,7 @@
     }
 
     .tagline-laranja {
-      color: var(--cor-texto-suave);
+      color: #F0C566;
       font-size: 0.85rem;
       letter-spacing: 1px;
       font-weight: 600;
@@ -96,11 +89,11 @@
     }
 
     .btn-laranja {
-      background-color: var(--cor-laranja-btn);
-      color: #fff;
+      background-color: #F0C566;
+      color: #28355c;
       border: none;
       padding: 0.6rem 1.5rem;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.85rem;
       border-radius: 4px;
       letter-spacing: 0.5px;
@@ -115,7 +108,11 @@
 
     .icon-box-feature {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
+      border: 0.5px solid #dcd3be;
+      border-radius: 8px;
+      background-color: #FAF8F3;
+      height: 100%;
     }
 
     .icon-box-feature i {
@@ -133,6 +130,7 @@
     .feature-item-text {
       font-size: 0.82rem;
       color: #666;
+      margin-bottom: 0;
     }
 
     /* Cards de Destaques */
@@ -163,24 +161,18 @@
       font-size: 0.78rem;
       color: #666;
       min-height: 40px;
+      margin-bottom: 0.5rem;
     }
 
     .prato-preco {
-      color: var(--cor-texto-suave);
+      color: #d37338;
       font-weight: 700;
       font-size: 0.9rem;
+      margin-bottom: 0;
     }
 
-    .link-detalhes {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #000;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-    }
-
-    /* Banner Happy Hour */
-    .banner-happy-hour {
+    /* Banner Feito para Compartilhar */
+    .banner-compartilhar {
       background-color: var(--cor-barra);
       color: #fff;
       border-radius: 8px;
@@ -188,30 +180,21 @@
       margin: 4rem 0;
     }
 
-    .btn-happy-hour {
-      background-color: var(--cor-laranja-btn);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.75rem;
-      padding: 0.5rem 1.5rem;
-      border-radius: 4px;
-      border: none;
-      letter-spacing: 0.5px;
-    }
-
-    /* Footer */
+    /* Rodapé Responsivo */
     footer {
       background-color: var(--cor-barra);
       color: #fff;
-      padding: 3.5rem 0 1.5rem 0;
+      padding: 3rem 0 1.5rem 0;
       font-size: 0.85rem;
     }
 
     footer h5 {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       letter-spacing: 0.8px;
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+      line-height: 1;
     }
 
     footer p, footer li {
@@ -223,6 +206,7 @@
     footer ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     footer a {
@@ -237,18 +221,31 @@
       font-size: 0.75rem;
       color: #aaa;
     }
+
+    @media (max-width: 767.98px) {
+      .footer-col {
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+
+      .nav-link-custom {
+        margin-left: 0.8rem;
+        font-size: 0.75rem;
+      }
+
+      .hero-title {
+        font-size: 2.8rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Navbar Ajustada (Sem "Sobre nós" e "Contato") -->
+  <!-- Navbar -->
   <header class="bg-custom-bar">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-        <div class="d-flex flex-column">
-          <span class="fonte-alex-brush">Juvenal Parada</span>
-          <span class="sub-logo">COZINHA COM AFETO</span>
-        </div>
+      <a href="#" class="d-flex align-items-center text-decoration-none">
+        <span class="fonte-alex-brush">Juvenal Parada</span>
       </a>
       <nav class="d-flex align-items-center">
         <a href="#" class="nav-link-custom">INÍCIO</a>
@@ -259,7 +256,7 @@
   </header>
 
   <main>
-    <!-- Hero Section (Apenas o botão "Conheça nosso cardápio") -->
+    <!-- Hero Section -->
     <section class="hero-section">
       <div class="container">
         <div class="row align-items-center">
@@ -275,22 +272,21 @@
           </div>
           <div class="col-md-6 text-center position-relative mt-4 mt-md-0">
             <!-- Ilustração central -->
-            <div class="p-4 rounded-circle d-inline-block" style="border: 1px dashed var(--cor-texto-suave);">
+            <div class="p-4 rounded-circle d-inline-block" style="border: 1px dashed #F0C566;">
               <span class="fonte-alex-brush" style="font-size: 3.5rem; color: var(--cor-barra);">Juvenal Parada</span>
-              <p class="sub-logo" style="color: var(--cor-barra);">COZINHA COM AFETO</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bons Encontros -->
+    <!-- Bons Encontros com Borda de 0.5px -->
     <section class="section-bons-encontros">
       <div class="container text-center">
         <span class="tagline-laranja">• UM LUGAR PARA •</span>
         <h2 class="font-playfair my-2" style="font-size: 2.2rem; font-family: 'Playfair Display', serif;">bons encontros</h2>
 
-        <div class="row mt-5">
+        <div class="row g-4 mt-4">
           <div class="col-md-4">
             <div class="icon-box-feature">
               <i class="bi bi-egg-fried"></i>
@@ -331,7 +327,6 @@
               <h3 class="prato-title">Porção de Frango</h3>
               <p class="prato-desc">Iscas de frango empanadas com molho da casa.</p>
               <p class="prato-preco">R$ 48,90</p>
-              <a href="#" class="link-detalhes">VER DETALHES →</a>
             </div>
           </div>
 
@@ -342,7 +337,6 @@
               <h3 class="prato-title">X-Burguer Artesanal</h3>
               <p class="prato-desc">Pão brioche, 180g de carne, queijo, bacon e molho especial.</p>
               <p class="prato-preco">R$ 34,90</p>
-              <a href="#" class="link-detalhes">VER DETALHES →</a>
             </div>
           </div>
 
@@ -353,38 +347,59 @@
               <h3 class="prato-title">Pastel na Chapa</h3>
               <p class="prato-desc">Pastel crocante feito na chapa com recheio especial.</p>
               <p class="prato-preco">R$ 29,90</p>
-              <a href="#" class="link-detalhes">VER DETALHES →</a>
             </div>
           </div>
         </div>
 
-        <!-- Banner Happy Hour -->
-        <div class="banner-happy-hour text-center">
-          <span class="tagline-laranja" style="color: #F0C566;">• SEXTA É DIA DE HAPPY HOUR! •</span>
-          <h3 class="mt-2 mb-3" style="font-size: 1.4rem; font-weight: 500;">Chopp gelado, porções e música boa.</h3>
-          <p class="mb-3" style="font-size: 0.8rem; color: #ccc;">A partir das 17h.</p>
-          <button class="btn btn-happy-hour">SAIBA MAIS</button>
+        <!-- Banner: Feito para Compartilhar -->
+        <div class="banner-compartilhar text-center">
+          <span class="tagline-laranja">• FEITO PARA COMPARTILHAR •</span>
+          <h3 class="mt-2 mb-3" style="font-size: 1.5rem; font-weight: 500;">Bons sabores ficam melhores juntos.</h3>
+          <p class="mb-0 mx-auto" style="font-size: 0.85rem; color: #ccc; max-width: 520px;">
+            Porções generosas, bebidas geladas e momentos para aproveitar com quem você gosta.
+          </p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer>
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-6">
-          <span class="fonte-alex-brush" style="font-size: 1.8rem;">Juvenal Parada</span>
-          <p class="sub-logo mt-1" style="color: #aaa;">COZINHA COM AFETO</p>
+      <div class="row align-items-start justify-content-between text-center text-md-start">
+        
+        <!-- Logo -->
+        <div class="col-12 col-md-auto footer-col">
+          <span class="fonte-alex-brush" style="font-size: 2.2rem; display: block; line-height: 1;">Juvenal Parada</span>
         </div>
-        <div class="col-md-6">
+
+        <!-- Horários -->
+        <div class="col-12 col-sm-6 col-md-auto footer-col">
+          <h5>HORÁRIOS</h5>
+          <p class="mb-1">seg a sex - 7h as 21h</p>
+          <p class="mb-1">sab - 8h as 19h</p>
+          <p class="mb-0">dom - fechado</p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="col-12 col-sm-6 col-md-auto footer-col">
           <h5>NAVEGAÇÃO</h5>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Cardápio</a></li>
-            <li><a href="#">Bootstrap</a></li>
+            <li class="mb-1"><a href="#">Início</a></li>
+            <li class="mb-1"><a href="#">Cardápio</a></li>
+            <li class="mb-0"><a href="#">Bootstrap</a></li>
           </ul>
         </div>
+
+        <!-- Contato -->
+        <div class="col-12 col-md-auto footer-col">
+          <h5>CONTATO</h5>
+          <p class="mb-1">Rua da Móoca 2895</p>
+          <p class="mb-1">São Paulo - SP</p>
+          <p class="mb-1">(11) 99333-1830</p>
+          <p class="mb-0">@lanchonetejuvenalparada</p>
+        </div>
+
       </div>
 
       <div class="footer-bottom text-center">
