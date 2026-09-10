@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juvenal Parada - Cozinha com Afeto</title>
   
-  <!-- Bootstrap 5 CSS -->
+  <!-- Bootstrap 5 CSS e Ícones -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
@@ -14,245 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --cor-barra: #28355C;
-      --cor-destaque: #F0C566;
-      --cor-fundo: #F7F5EE;
-      --cor-laranja-btn: #F0C566;
-      --cor-texto-suave: #F0C566;
-    }
-
-    body {
-      background-color: var(--cor-fundo) !important;
-      color: #212529;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Navbar com tom exato e maior altura */
-    .bg-custom-bar {
-      background-color: var(--cor-barra) !important;
-      padding: 1.4rem 0;
-    }
-
-    .fonte-alex-brush {
-      font-family: 'Alex Brush', cursive;
-      font-size: 2.2rem;
-      color: #F0C566;
-      text-decoration: none;
-      line-height: 1;
-    }
-
-    .nav-link-custom {
-      color: #FFFFFF !important;
-      font-weight: 400;
-      font-size: 0.85rem;
-      letter-spacing: 0.8px;
-      margin-left: 2rem;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-
-    .nav-link-custom:hover {
-      color: var(--cor-destaque) !important;
-    }
-
-    /* Hero Section */
-    .hero-section {
-      padding: 4rem 0 3rem 0;
-      position: relative;
-    }
-
-    .hero-panela-img {
-      max-width: 180px;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-texto-juvenal {
-      font-family: 'Alex Brush', cursive;
-      font-size: 3.8rem;
-      color: var(--cor-barra);
-      line-height: 1;
-    }
-
-    .tagline-laranja {
-      color: #F0C566;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .hero-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.8rem;
-      line-height: 1.15;
-      font-weight: 500;
-      color: #1a1a1a;
-      margin: 0.8rem 0;
-    }
-
-    .hero-subtitle {
-      font-size: 0.95rem;
-      color: #555;
-      max-width: 420px;
-    }
-
-    .btn-laranja {
-      background-color: #F0C566;
-      color: #28355c;
-      border: none;
-      padding: 0.6rem 1.5rem;
-      font-weight: 700;
-      font-size: 0.85rem;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    /* Seção Bons Encontros */
-    .section-bons-encontros {
-      padding: 4rem 0;
-    }
-
-    .icon-box-feature {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      border: 0.5px solid #dcd3be;
-      border-radius: 8px;
-      background-color: #FAF8F3;
-      height: 100%;
-    }
-
-    .icon-box-feature i {
-      font-size: 1.8rem;
-      color: #333;
-      margin-bottom: 0.8rem;
-    }
-
-    .feature-item-title {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-
-    .feature-item-text {
-      font-size: 0.82rem;
-      color: #666;
-      margin-bottom: 0;
-    }
-
-    /* Cards de Destaques */
-    .card-item-prato {
-      border-radius: 8px;
-      border: none;
-      background-color: #ffffff;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-      padding: 1.25rem;
-      height: 100%;
-    }
-
-    .card-item-prato img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-    }
-
-    .prato-title {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-
-    .prato-desc {
-      font-size: 0.78rem;
-      color: #666;
-      min-height: 40px;
-      margin-bottom: 0.5rem;
-    }
-
-    .prato-preco {
-      color: #d37338;
-      font-weight: 700;
-      font-size: 0.9rem;
-      margin-bottom: 0;
-    }
-
-    /* Banner Feito para Compartilhar */
-    .banner-compartilhar {
-      background-color: var(--cor-barra);
-      color: #fff;
-      border-radius: 8px;
-      padding: 2.5rem 2rem;
-      margin: 4rem 0;
-    }
-
-    /* Rodapé */
-    footer {
-      background-color: var(--cor-barra);
-      color: #fff;
-      padding: 3rem 0 1.5rem 0;
-      font-size: 0.85rem;
-    }
-
-    footer h5 {
-      font-size: 0.85rem;
-      letter-spacing: 0.8px;
-      font-weight: 700;
-      margin-bottom: 0.8rem;
-      text-transform: uppercase;
-      line-height: 1;
-    }
-
-    footer p, footer li {
-      color: #ccc;
-      font-size: 0.8rem;
-      line-height: 1.6;
-    }
-
-    footer ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 1.5rem;
-      margin-top: 2.5rem;
-      font-size: 0.75rem;
-      color: #aaa;
-    }
-
-    @media (max-width: 767.98px) {
-      .footer-col {
-        text-align: center;
-        margin-bottom: 1.8rem;
-      }
-
-      .nav-link-custom {
-        margin-left: 0.8rem;
-        font-size: 0.75rem;
-      }
-
-      .hero-title {
-        font-size: 2.8rem;
-      }
-    }
-  </style>
+  <!-- Estilo Externo -->
+  <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
 
@@ -286,7 +49,7 @@
             </div>
           </div>
           <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center mt-4 mt-md-0 pt-md-4">
-            <img src="panela.png" alt="Panela" class="hero-panela-img">
+            <img src="img/logo lanchonet.png" alt="Panela" class="hero-panela-img">
             <span class="hero-texto-juvenal">Juvenal Parada</span>
           </div>
         </div>
@@ -325,41 +88,15 @@
       </div>
     </section>
 
-    <!-- Destaques da Casa -->
+    <!-- Destaques da Casa (Renderizado via JS) -->
     <section class="py-4">
       <div class="container">
         <div class="text-center mb-4">
           <span class="tagline-laranja">• DESTAQUES DA CASA •</span>
         </div>
 
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card-item-prato">
-              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop" alt="Porção de Frango">
-              <h3 class="prato-title">Porção de Frango</h3>
-              <p class="prato-desc">Iscas de frango empanadas com molho da casa.</p>
-              <p class="prato-preco">R$ 48,90</p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card-item-prato">
-              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop" alt="X-Burguer Artesanal">
-              <h3 class="prato-title">X-Burguer Artesanal</h3>
-              <p class="prato-desc">Pão brioche, 180g de carne, queijo, bacon e molho especial.</p>
-              <p class="prato-preco">R$ 34,90</p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card-item-prato">
-              <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop" alt="Pastel na Chapa">
-              <h3 class="prato-title">Pastel na Chapa</h3>
-              <p class="prato-desc">Pastel crocante feito na chapa com recheio especial.</p>
-              <p class="prato-preco">R$ 29,90</p>
-            </div>
-          </div>
-        </div>
+        <!-- Container onde o JS vai criar os cards -->
+        <div id="destaques-grid" class="row g-4"></div>
 
         <!-- Banner: Feito para Compartilhar -->
         <div class="banner-compartilhar text-center">
@@ -414,5 +151,7 @@
     </div>
   </footer>
 
+  <!-- Script JS do Destaque -->
+  <script src="inicio.js"></script>
 </body>
 </html>
