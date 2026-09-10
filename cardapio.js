@@ -1,28 +1,34 @@
 // Lista centralizada de todos os itens do cardápio
 const itensCardapio = [
-  // --- PORÇÕES ---
+// --- PORÇÕES ---
   {
     categoria: 'porcoes',
     nome: 'Batata Frita',
     desc: 'Sequinha e crocante',
-    preco: 'R$ 24,90',
+    preco: 'consulte o valor',
     img: 'img/batata-frita.jpg'
   },
   {
     categoria: 'porcoes',
     nome: 'Calabresa Acebolada',
     desc: 'Calabresa grelhada com cebola e acompanhamento',
-    preco: 'R$ 38,90',
+    preco: 'Consulte o valor',
     img: 'img/calabresa.webp'
   },
   {
     categoria: 'porcoes',
     nome: 'Frango a Passarinho',
     desc: 'Acompanha alho frito e limão',
-    preco: 'R$ 42,90',
+    preco: 'Consulte o valor',
     img: 'img/frango.avif'
   },
-
+  {
+    categoria: 'porcoes',
+    nome: 'Empanadinho Família JP',
+    desc: 'Empanado de frango especial servido com geleia de abacaxi apimentada',
+    preco: 'Consulte o valor',
+    img: 'https://via.placeholder.com/350x200?text=Empanadinho+JP'
+  },
   // --- SANDUÍCHES ---
   {
     categoria: 'sanduiches',
@@ -98,89 +104,116 @@ const itensCardapio = [
   // --- PRATOS ---
   {
     categoria: 'pratos',
-    nome: 'Parmegiana',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Parmegiana'
-  },
-  {
-    categoria: 'pratos',
     nome: 'Contra Filé',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 32,00',
     img: 'https://via.placeholder.com/350x200?text=Contra+File'
   },
   {
     categoria: 'pratos',
+    nome: 'Filé de Frango',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 28,00',
+    img: 'https://via.placeholder.com/350x200?text=File+de+Frango'
+  },
+  {
+    categoria: 'pratos',
+    nome: 'Parmegiana',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 34,00',
+    img: 'https://via.placeholder.com/350x200?text=Parmegiana'
+  },
+  {
+    categoria: 'pratos',
     nome: 'Milanesas',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 30,00',
     img: 'https://via.placeholder.com/350x200?text=Milanesa'
   },
   {
     categoria: 'pratos',
-    nome: 'Omelete',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Omelete'
-  },
-  {
-    categoria: 'pratos',
     nome: 'Picadinho',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 28,00',
     img: 'https://via.placeholder.com/350x200?text=Picadinho'
   },
   {
     categoria: 'pratos',
     nome: 'Calabresa Defumada',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 26,00',
     img: 'https://via.placeholder.com/350x200?text=Calabresa+Defumada'
   },
   {
     categoria: 'pratos',
-    nome: 'Almôndegas',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas (*Confira a disponibilidade)',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Almondegas'
-  },
-  {
-    categoria: 'pratos',
     nome: 'Bisteca',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 26,00',
     img: 'https://via.placeholder.com/350x200?text=Bisteca'
   },
   {
     categoria: 'pratos',
-    nome: 'Filé de Frango',
-    desc: 'Bases: Arroz, Feijão ou Macarrão (até 3) + Salada ou Fritas',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=File+de+Frango'
+    nome: 'Omelete',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas',
+    preco: 'R$ 25,00',
+    img: 'https://via.placeholder.com/350x200?text=Omelete'
   },
-
+  {
+    categoria: 'pratos',
+    nome: 'Almôndegas',
+    desc: 'Acompanha bases: Arroz, Feijão ou Macarrão (até 3 opções) + Salada ou Fritas (*Confira disponibilidade)',
+    preco: 'R$ 28,00',
+    img: 'https://via.placeholder.com/350x200?text=Almondegas'
+  },
   // --- BEBIDAS ---
   {
     categoria: 'bebidas',
     nome: 'Refrigerante Lata',
-    desc: 'Lata 350ml gelada',
-    preco: 'R$ 6,00',
-    img: 'https://via.placeholder.com/350x200?text=Refrigerante'
+    desc: 'Lata 350ml (todos os sabores)',
+    preco: 'R$ 8,00',
+    img: 'https://via.placeholder.com/350x200?text=Refrigerante+Lata'
   },
   {
     categoria: 'bebidas',
-    nome: 'Suco Natural',
-    desc: 'Confira os sabores disponíveis',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Suco+Natural'
+    nome: 'Refrigerante 600ml (Coca-Cola)',
+    desc: 'Garrafa 600ml',
+    preco: 'R$ 11,00',
+    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+600ml'
   },
   {
     categoria: 'bebidas',
-    nome: 'Suco de Polpa',
-    desc: 'Confira os sabores disponíveis',
-    preco: 'Consulte o valor',
-    img: 'https://via.placeholder.com/350x200?text=Suco+de+Polpa'
+    nome: 'Refrigerante 600ml (Outros sabores)',
+    desc: 'Garrafa 600ml',
+    preco: 'R$ 10,00',
+    img: 'https://via.placeholder.com/350x200?text=Refrigerante+600ml'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Refrigerante 2 Litros (Coca-Cola)',
+    desc: 'Garrafa 2L',
+    preco: 'R$ 19,50',
+    img: 'https://via.placeholder.com/350x200?text=Coca-Cola+2L'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Refrigerante 2 Litros (Outros sabores)',
+    desc: 'Garrafa 2L',
+    preco: 'R$ 15,00',
+    img: 'https://via.placeholder.com/350x200?text=Refrigerante+2L'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Suco de Laranja',
+    desc: 'Suco natural',
+    preco: 'R$ 13,00',
+    img: 'https://via.placeholder.com/350x200?text=Suco+de+Laranja'
+  },
+  {
+    categoria: 'bebidas',
+    nome: 'Sucos (Outros sabores)',
+    desc: 'Sucos diversos',
+    preco: 'R$ 11,00',
+    img: 'https://via.placeholder.com/350x200?text=Sucos+Diversos'
   }
 ];
 
