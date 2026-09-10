@@ -10,17 +10,35 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header & Navbar */
 .bg-custom-bar {
   background-color: var(--cor-barra) !important;
 }
 
 .fonte-alex-brush {
   font-family: 'Alex Brush', cursive;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #F0C566;
-  margin-left: 10px;
+  text-decoration: none;
+  line-height: 1;
 }
 
+.nav-link-custom {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #F0C566 !important;
+}
+
+/* Botões de Categoria */
 .btn-categoria {
   background-color: #e9ecef;
   color: #495057;
@@ -42,6 +60,7 @@ body {
   color: #000000 !important;
 }
 
+/* Cards do Cardápio */
 .card-item {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);

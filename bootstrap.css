@@ -1,37 +1,44 @@
-/* Variáveis globais do site */
 :root {
-  --cor-barra: #8B0000; /* Cor escura do cabeçalho e rodapé (ex: vinho/vermelho escuro) */
-  --cor-fundo: #F8F9FA;
+  --cor-barra: #2b3a67;
+  --cor-destaque: #e8c547;
+  --cor-fundo: #F7F5EE;
 }
 
-/* Estilo da barra customizada */
+body {
+  background-color: var(--cor-fundo) !important;
+  color: #212529;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header & Navbar Padronizados */
 .bg-custom-bar {
   background-color: var(--cor-barra) !important;
 }
 
-/* Fonte especial para o nome do estabelecimento */
 .fonte-alex-brush {
   font-family: 'Alex Brush', cursive;
   font-size: 2.2rem;
-  color: #ffffff;
-  margin-left: 10px;
+  color: #F0C566;
+  text-decoration: none;
+  line-height: 1;
 }
 
-/* Links da Navbar */
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.nav-link-custom {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #F0C566 !important;
 }
 
-/* Ajuste da logo no cabeçalho */
+/* Ajuste das imagens na navbar (se houver) */
 .navbar-brand img {
   max-height: 45px;
   width: auto;

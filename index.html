@@ -19,38 +19,19 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Navbar Padronizada -->
-  <nav class="navbar navbar-expand-lg bg-custom-bar navbar-dark py-2">
-    <div class="container">
-      
-      <!-- Logo + Nome -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="img" alt="Logo Juvenal Parada" onerror="this.style.display='none'">
+  <!-- Header / Navbar Padronizada com Cardápio -->
+  <header class="bg-custom-bar py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
         <span class="fonte-alex-brush">Juvenal Parada</span>
       </a>
-
-      <!-- Botão Mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menus de Navegação -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-3 text-uppercase align-items-lg-center mt-3 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">INÍCIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cardapio.html">CARDÁPIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="bootstrap.html">BOOTSTRAP</a>
-          </li>
-        </ul>
-      </div>
-
+      <nav class="d-flex align-items-center gap-4">
+        <a href="index.html" class="nav-link-custom active">INÍCIO</a>
+        <a href="cardapio.html" class="nav-link-custom">CARDÁPIO</a>
+        <a href="bootstrap.html" class="nav-link-custom">BOOTSTRAP</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main class="flex-grow-1">
     <!-- Hero Section -->
@@ -68,7 +49,7 @@
             </div>
           </div>
           <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center mt-4 mt-md-0 pt-md-4">
-            <img src="img/logo lanchonet.png" alt="Panela" class="hero-panela-img">
+            <img src="img/logo lanchonet.png" alt="Logo Juvenal Parada" class="hero-panela-img">
             <span class="hero-texto-juvenal">Juvenal Parada</span>
           </div>
         </div>
